@@ -16,6 +16,7 @@ void init(Plugin *p) {
 
 	readGlobalSettings();
 
+#ifndef CARDINAL_MINI_TRIM_INIT
 	p->addModel(modelPatchMaster);
 	p->addModel(modelPatchMasterBlank);
 	p->addModel(modelRouteMasterMono5to1);
@@ -35,6 +36,7 @@ void init(Plugin *p) {
 	p->addModel(modelAuxExpanderJr);
 	p->addModel(modelMixMaster);
 	p->addModel(modelAuxExpander);
+#endif
 }
 
 
